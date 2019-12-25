@@ -5,283 +5,148 @@
 	margin: 0px;
 	padding: 0px;
 }
+
 body
 {
-	background-color: #1652b1;
+	background-color: #444;
 	color: #FFF;
 }
 
-.header-content
+#container
 {
-	width: 100%;
-	height: 390px;
-	border-bottom: 10px solid #FFF;
-	background-image: url('../img/banner1.jpg');
-	background-size: cover;
-	background-position: left center;
-	background-attachment: fixed;
-	border-top: 1px solid #FFF;
-	overflow: hidden;
-}
-
-.content-image
-{
-	width: 20%;
-	display: flex;
+	max-width: 1280px;
 	margin: 1px auto;
-}
-
-.my-image
-{
-	width: 100%;
-	margin-top: 10px;
-	height: auto;
-	border-radius: 50%;
-	border: 3px solid #FFF;
-}
-
-.text
-{
-	width: 30%;
-	margin: auto;
-	height: 80px;
-	background-color:rgba(000,000,000,0.6);
-	border: 1px dashed #FFF;
-	border-radius: 3px;
-	justify-content: center;
+	padding: 10px;
 }
 
 h1
 {
 	font-size: 22px;
 	text-align: center;
-	color: #FFF;
-	letter-spacing: 0.5px;
+	margin-bottom: 30px;
+	margin-top: 20px;
 }
 
-small, strong
+.title
 {
-	display: flex;
-	justify-content: center;
-	font-size: 20px;
-	color: #FFF;
-	letter-spacing: 0.5px;
+	margin-bottom: 10px;
+	text-transform: uppercase;
 }
 
-.main-content
+hr
 {
-	max-width: 1280px;
+	width: 10%;
+	color: #f27609;
+	margin-bottom: 10px;
+}
+
+p
+{
+	font-size: 18px;
+	line-height: 30px;
+	text-align: justify;
+	color: white;
+	font-weight: 100;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+}
+
+h3
+{
+	color: #f27609;
+	text-transform: uppercase;
+}
+
+.dados
+{
 	width: 100%;
-	margin: 20px auto;
-	border: 1px solid #000;
-	padding: 5px;
 }
 
-.content-experiencia
+.dados figure
 {
-	width: 90%;
-	padding: 5px;
-	margin: 20px auto;
-	font-size: 32px;
-	text-align: center;
-	border: 2px dashed #FFF;
-	letter-spacing: 0.5px;
+
+	float: left;
+	margin-bottom: 20px;
 }
 
+.dados img
+{
+	width: 100%;
+	height: auto;
+	border-radius: 3%;
+}
+
+.dados-pessoais
+{
+	width: 62%;
+	float: right;
+}
+
+.sobre
+{
+	clear: both;
+}
+
+.experiencia
+{
+	margin-bottom: 30px;
+}
+
+a
+{
+	color: #FFF;
+}
+
+footer
+{
+	width: auto;
+	background-color: #FFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
+	color: #f27609;
+	height: 56px;
+}
 /*Medias Queries*/
 
 /* Telefones em paisagem e abaixo */
-@media (max-width: 480px) { 
+@media (max-width: 480px) 
+{ 
    /* estilos aqui */
-   body
-   {
-   		
-   } 
-
-   .header-content
+ 
+	.dados-pessoais
 	{
-		max-width: 480px;
-		width: 100%;
-		height: 320px;
-		background-position: center;
-		position: relative;
+		float: none;
 	}
-	.content-image
-	{
-		width: 50% !important;
-		display: flex;
-		margin: 1px auto;
-	}
-
-	.my-image
-	{
-		margin-top: 40px;
-	}
-
-	.text
-	{
-		width: 100%;
-		position: absolute;
-		bottom: 0.5px;
-		background-color:rgba(000,000,000,0.8);
-		border: none;
-		border-radius: 1px;
-
-	}
-
-	h1
-	{
-		font-size: 28px;
-	}
-
-	small, strong
-	{
-		font-size: 19px;
-	}
-
-	.main-content
-	{
-		width: 99%;
-		padding: 0px;
-		border: none;
-	}
-
-	.content-experiencia
-	{
-		width: 99%;
-		padding: 0px;
-	}
+   
 }
 
 /* Telefones em paisagem a tablet em retrato */
-@media (min-width: 481px) and (max-width: 767px) {
-    /* estilos aqui */        
-   body
-   {
-   		
-   } 
-
-   .header-content
+@media (min-width: 481px) and (max-width: 767px) 
+{
+    /* estilos aqui */ 
+    .dados-pessoais
 	{
-		max-width: 767px;
-		width: 100%;
-		height: 400px;
-		position: relative;
-	}
-	.content-image
-	{
-		width: 40%;
-		display: flex;
-		margin: 1px auto;
-	}
-
-	.my-image
-	{
-		margin-top: 20px;
-	}
-
-	.text
-	{
-		width: 100%;
-		position: absolute;
-		bottom: 0.5px;
-		background-color:rgba(000,000,000,0.8);
-		border: none;
-		border-radius: 1px;
-
-	}
-
-	h1
-	{
-		font-size: 28px;
-	}
-
-	small, strong
-	{
-		font-size: 19px;
-	}
-
-	.main-content
-	{
-		width: 99%;
-		padding: 0px;
-		border: none;
-	}
-
-	.content-experiencia
-	{
-		width: 99%;
-		padding: 0px;
+		float: none;
 	}       
+     
 }
 
 /* Tablet em retrato a paisagem e desktop */
-@media (min-width: 768px) and (max-width: 979px) {
+@media (min-width: 768px) and (max-width: 979px) 
+{
     /* estilos aqui */
-    body
-   {
-   		overflow-x: hidden !important;
-   } 
-
-   .header-content
+    .dados-pessoais
 	{
-		max-width: 979px;
-		width: 90%;
-		height: 400px;
-		position: relative;
-		overflow-y: hidden;
+		float: none;
 	}
-	.content-image
-	{
-		width: 35%;
-		display: flex;
-		margin: 1px auto;
-	}
-
-	.my-image
-	{
-		margin-top: 20px;
-	}
-
-	.text
-	{
-		width: 100%;
-		position: absolute;
-		bottom: 0.5px;
-		background-color:rgba(000,000,000,0.8);
-		border: none;
-		border-radius: 1px;
-
-	}
-
-	h1
-	{
-		font-size: 28px;
-	}
-
-	small, strong
-	{
-		font-size: 19px;
-	}
-
-	.main-content
-	{
-		width: 80%;
-		margin: auto;
-		padding: 0px;
-		border: none;
-	}
-
-	.content-experiencia
-	{
-		width: 99%;
-		padding: 0px;
-	}       
-}
+  
 }
 
 /* Desktop grande */
-@media (min-width: 1200px) {
+@media (min-width: 1200px) 
+{
     /* estilos aqui */
 
 }
